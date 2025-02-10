@@ -1,0 +1,62 @@
+/* Estilos generales */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Navbar */
+  .navbar {
+    margin-bottom: 2rem;
+  }
+  
+  /* Recuadro de color */
+  .color-box {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin: 0 auto;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Card */
+  .card {
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .card-header {
+    border-radius: 10px 10px 0 0;
+  }
+  
+  /* Controles de rango */
+  .form-range {
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  /* Campos de texto */
+  .form-control {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Color picker */
+  .form-control-color {
+    width: 100%;
+    height: 45px;
+    cursor: pointer;
+  }
+  
+  /* Texto del código hexadecimal */
+  #hex-code {
+    font-size: 1.5em;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 2rem;
+  }

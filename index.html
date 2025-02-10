@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selector de Colores RGB</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Archivo CSS personalizado -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Selector de Colores RGB</a>
+    </div>
+  </nav>
+
+  <!-- Contenido principal -->
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card shadow">
+          <div class="card-header bg-primary text-white">
+            <h4 class="card-title mb-0">Selecciona un color</h4>
+          </div>
+          <div class="card-body">
+            <!-- Recuadro para mostrar el color -->
+            <div id="color-box" class="color-box mb-4"></div>
+
+            <!-- Input de tipo color (color picker) -->
+            <div class="mb-4">
+              <label for="color-picker" class="form-label">Selecciona un color:</label>
+              <input type="color" class="form-control form-control-color" id="color-picker" value="#000000">
+            </div>
+
+            <!-- Controles para seleccionar RGB -->
+            <div class="mb-3">
+              <label for="red" class="form-label">Rojo (R)</label>
+              <input type="range" class="form-range" id="red" min="0" max="255" value="0">
+              <input type="number" class="form-control mt-2" id="red-input" min="0" max="255" value="0">
+            </div>
+            <div class="mb-3">
+              <label for="green" class="form-label">Verde (G)</label>
+              <input type="range" class="form-range" id="green" min="0" max="255" value="0">
+              <input type="number" class="form-control mt-2" id="green-input" min="0" max="255" value="0">
+            </div>
+            <div class="mb-3">
+              <label for="blue" class="form-label">Azul (B)</label>
+              <input type="range" class="form-range" id="blue" min="0" max="255" value="0">
+              <input type="number" class="form-control mt-2" id="blue-input" min="0" max="255" value="0">
+            </div>
+
+            <!-- Código hexadecimal -->
+            <div class="text-center mt-4">
+              <p class="lead">Color en hexadecimal: <strong id="hex-code">#000000</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2023 Selector de Colores RGB. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Bootstrap JS y dependencias -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <!-- Archivo JS personalizado -->
+  <script src="script.js"></script>
+</body>
+</html>
